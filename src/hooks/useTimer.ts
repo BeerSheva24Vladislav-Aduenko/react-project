@@ -8,8 +8,7 @@ interface DateTime {
   second: number; 
 }
 
-export default function useTimer(interval:number = 1000): DateTime {
-   let currentFullTime = new Date();
+export default function useTimer(currentFullTime: Date, interval:number = 1000): DateTime {
   const [year, setYear] = useState<number>(currentFullTime.getFullYear());
   const [month, setMonth] = useState<number>(currentFullTime.getMonth());
   const [day, setDay] = useState<number>(currentFullTime.getDate());
@@ -19,7 +18,7 @@ export default function useTimer(interval:number = 1000): DateTime {
 
   useEffect(() => {
     function tick() {
-      currentFullTime = new Date();
+      currentFullTime.setTime(currentFullTime.getTime() + interval)
       setYear(currentFullTime.getFullYear());
       setMonth(currentFullTime.getMonth() + 1);
       setDay(currentFullTime.getDate());
