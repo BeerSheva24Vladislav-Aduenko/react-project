@@ -1,12 +1,12 @@
 import React from 'react'
 
 import './App.css'
-import TimersWall from './components/timers-wall/TimersWall'
+import EmployeeForm from './components/EmployeeForm'
 
 const App: React.FC = () => {
   
   return (
-    <TimersWall></TimersWall>
+   <EmployeeForm submitter={(empl) => console.log(empl)}></EmployeeForm>
   )
 }
 
