@@ -1,0 +1,39 @@
+{
+  "coffees": [
+    {
+      "name": "Espresso",
+      "value": "espresso",
+      "sizes": ["small", "medium", "large"]
+    },
+    {
+      "name": "Latte",
+      "value": "latte",
+      "flavors": ["vanilla", "caramel", "hazelnut", "pumpkin spice"],
+      "sizes": ["small", "medium", "large"]
+    },
+    {
+      "name": "Cappuccino",
+      "value": "cappuccino",
+      "flavors": ["vanilla", "cinnamon", "chocolate"],
+      "sizes": ["small", "medium", "large"]
+    },
+    {
+      "name": "Macchiato",
+      "value": "macchiato",
+      "flavors": ["caramel", "hazelnut", "almond"],
+      "sizes": ["small", "medium", "large"]
+    },
+    {
+      "name": "Americano",
+      "value": "americano",
+      "flavors": ["vanilla", "mint", "coconut"],
+      "sizes": ["small", "medium", "large"]
+    },
+    {
+      "name": "Mocha",
+      "value": "mocha",
+      "flavors": ["chocolate", "peppermint", "white chocolate"],
+      "sizes": ["small", "medium", "large"]
+    }
+  ]
+}
